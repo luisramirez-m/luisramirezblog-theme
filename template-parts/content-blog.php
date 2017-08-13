@@ -16,15 +16,15 @@
 				<div class="post-info">
 					<div class="post-info-line-blog"></div>
 					<div class="fecha-articulo date updated published"><?php the_time(' j \d\e\ F \d\e\ Y \ '); ?> </div>
-					<div class="time-reading"><?php post_read_time(); ?></div>
-					<div class="categoria"><a href=""><?php the_category( ', ' ); ?></a></div>
+					<div class="categoria"><a href=""><?php the_category(', '); ?></a></div>
 					<div class="autor autor-blog">
 						 Autor: <a href="http:https://twitter.com/LuisRamirezMe"><span class="vcard author"><span class="fn"><?php the_author(); ?></span></span></a>
 					</div>
 					<?php
-					if ( is_sticky() )
-						echo '<div class="featured"><i class="fa fa-bookmark" aria-hidden="true"></i></div>';
-					?>
+                    if (is_sticky()) {
+                        echo '<div class="featured"><i class="fa fa-bookmark" aria-hidden="true"></i></div>';
+                    }
+                    ?>
 				</div>
 			</div>
 

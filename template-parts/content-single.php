@@ -11,12 +11,12 @@
 						<!-- <div class="post-info-line-single"></div> -->
 						<div class="post-info-single">
 							<div class="fecha-articulo date updated published"><?php the_time('j \d\e\ F \d\e\ Y \ '); ?> </div>
-							<div class="time-reading"><?php post_read_time(); ?></div>
-							<div class="categoria"><a href=""><?php the_category( ', ' ); ?></a></div>
+							<div class="categoria"><a href=""><?php the_category(', '); ?></a></div>
 							<?php
-							if ( is_sticky() )
-								echo '<div class="featured"><i class="fa fa-bookmark" aria-hidden="true"></i></div>';
-							?>
+                            if (is_sticky()) {
+                                echo '<div class="featured"><i class="fa fa-bookmark" aria-hidden="true"></i></div>';
+                            }
+                            ?>
 						</div>
 					</div>
 					<div class="entry-content">
@@ -43,10 +43,10 @@
 
 					<!-- Form Comentarios-->
 					<?php
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-					?>
+                    if (comments_open() || get_comments_number()) :
+                        comments_template();
+                    endif;
+                    ?>
 
 
 					<!-- Comentarios-->

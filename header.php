@@ -17,7 +17,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="icon" href="">
   <!-- Fonts -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Domine:400,700|Open+Sans:300,400,700" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Domine:400,700|Lato:300,400,700" rel="stylesheet">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -64,7 +64,8 @@
                                   'theme_location' => 'menu-1',
                                   'menu_id' => 'primary-menu',
                                   'menu_class' => 'nav navbar-nav',
-                                  ) ); ?>
+                                  )
+); ?>
                               </div>
                           </nav>
                       </div>
