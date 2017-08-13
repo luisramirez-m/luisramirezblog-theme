@@ -48,9 +48,12 @@
                   <?php foreach ($posts as $single) { // iterates the posts?>
                       <div class="row post-single-archive">
                           <div class="col-md-3 text-right">
-                              <span class="date-archives text-muted"><?php echo mysql2date(' j \d\e\ F ', $single->post_date) ?></span>
+                              <span class="date-archives text-muted fecha-articulo date updated published"><?php echo mysql2date(' j \d\e\ F ', $single->post_date) ?></span>
+                              <div class="autor autor-blog">
+          						 Autor: <a href="http:https://twitter.com/LuisRamirezMe"><span class="vcard author"><span class="fn"><?php the_author(); ?></span></span></a>
+          					</div>
                           </div>
-                          <div class="col-md-9">
+                          <div class="col-md-9 entry-title">
                               <a href="<?php echo get_permalink($single->ID); ?>"><?php echo get_the_title($single->ID); ?></a>
                           </div>
                     </div>
